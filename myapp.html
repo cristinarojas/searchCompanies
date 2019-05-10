@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cristina Rojas - Yahoo! Finance</title>
+    <link rel="stylesheet" href="styles/master.css">
+    <link rel="alternate icon" href="https://finance.yahoo.com/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto" rel="stylesheet">
+  </head>
+  <body>
+    <section class="container">
+      <a class="author" href="https://github.com/cristinarojas" target="_blank">By Cristina Rojas</a>
+      <form>
+        <label for="search" class="title">Search a company:</label>
+        <input
+            type="text"
+            onkeyup="handleSearch(this.value)"
+            class="search"
+            id="search"
+            name="search"
+            value=""
+            placeholder="Search here..."
+            autocomplete="off"
+            tabindex="1"
+            autofocus
+            autocorrect="off"
+            autocapitalize="off" />
+
+          <div class="results-container" id="results-container">
+          </div>
+      </form>
+    </section>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
